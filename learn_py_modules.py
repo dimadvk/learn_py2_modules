@@ -17,13 +17,31 @@ __author__ = 'Dimitriy Kutnyakov'
 __email__ = 'd.v.kutnyakov@gmail.com'
 
 
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
+
 def print_random_module():
     module = random.choice(modules.keys())
-    print '\nPyMOTW: %s - %s -- %s\n' % (
-        module,
-        modules[module]['description'],
-        modules[module]['url'],
+    line = '\n{pymotw_color}PyMOTW:{endc} {name_color}{name}{endc} - ' \
+           '{descr_color}{descr}{endc} -- {url_color}{url}{endc}\n'.format(
+        name=module,
+        descr=modules[module]['description'],
+        url=modules[module]['url'],
+        pymotw_color=bcolors.BOLD,
+        name_color=bcolors.OKGREEN,
+        descr_color='',
+        url_color=bcolors.UNDERLINE,
+        endc=bcolors.ENDC,
     )
+    print line
 
 
 modules = {'BaseHTTPServer': {'description': 'Provides base classes for implementing web servers.',
