@@ -4,9 +4,9 @@ import random
 """
 This module helps linux users to learn about modules of Python standard library.
 Usage:
-    - put module file in your home directory
+    - put the module file learn_py2_modules.py in your home directory
     - add to your .bashrc file
-        ./learn_py_modules.py
+        ./learn_py2_modules.py
 
     That'is it.
     Now, info about some random module would be shown every time you run a new bash shell.
