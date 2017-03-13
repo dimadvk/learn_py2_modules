@@ -11,8 +11,8 @@ Usage:
 
     `./learn_py2_modules.py`
 
-That'is it.
+That's it.
 Now, info about some random module would be shown every time you run a new bash shell.
 
-[[https://github.com/dimadvk/learn_py2_modules/blob/master/preview.png|alt=preview]]
+![preview image](https://github.com/dimadvk/learn_py2_modules/blob/master/preview.png?raw=true)
 
