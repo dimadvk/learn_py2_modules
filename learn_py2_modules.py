@@ -29,7 +29,7 @@ class bcolors:
 
 
 def print_random_module():
-    module = random.choice(modules.keys())
+    module = random.choice(list(modules.keys()))
     line = '\n{pymotw_color}PyMOTW:{endc} {name_color}{name}{endc} - ' \
            '{descr_color}{descr}{endc} -- {url_color}{url}{endc}\n'.format(
         name=module,
@@ -41,7 +41,7 @@ def print_random_module():
         url_color=bcolors.UNDERLINE,
         endc=bcolors.ENDC,
     )
-    print line
+    print(line)
 
 
 modules = {'BaseHTTPServer': {'description': 'Provides base classes for implementing web servers.',
