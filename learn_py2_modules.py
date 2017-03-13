@@ -30,8 +30,8 @@ class bcolors:
 
 def print_random_module():
     module = random.choice(list(modules.keys()))
-    line = '\n{pymotw_color}PyMOTW:{endc} {name_color}{name}{endc} - ' \
-           '{descr_color}{descr}{endc} -- {url_color}{url}{endc}\n'.format(
+    line = '{pymotw_color}PyMOTW:{endc} {name_color}{name}{endc} - ' \
+           '{descr_color}{descr}{endc} -- {url_color}{url}{endc}'.format(
         name=module,
         descr=modules[module]['description'],
         url=modules[module]['url'],
