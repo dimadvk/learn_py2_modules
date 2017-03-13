@@ -8,7 +8,7 @@ Usage:
     - add to your .bashrc file
         ./learn_py2_modules.py
 
-    That'is it.
+    That's it.
     Now, info about some random module would be shown every time you run a new bash shell.
 
 """
